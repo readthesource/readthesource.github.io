@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Hangouts on readthesource </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://readthesource.github.io/hangouts/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 02 Oct 2014 16:08:41 PDT</updated>
+    
+    <item>
+      <title>Whizbang Framework Overview</title>
+      <link>http://readthesource.github.io/hangouts/whizbang-framework/</link>
+      <pubDate>Thu, 02 Oct 2014 16:08:41 PDT</pubDate>
+      
+      <guid>http://readthesource.github.io/hangouts/whizbang-framework/</guid>
+      <description>&lt;p&gt;Lorem ab voluptatem aut nam nulla vero non reprehenderit libero quia consequuntur. Iste hic iste rem quod doAmet veniam qui non eaque perspiciatis officiis in cumque. Ut saepe tempora amet soluta voluptatem quaerat odio autem eaque voluptates! Soluta ratione ad repudiandae dicta quia in? Doloremque doloremque minima!&lt;/p&gt;
+
+&lt;p&gt;Dolor facilis non omnis et consequuntur pariatur vero. Cupiditate sit odit ea tenetur reprehenderit aliquid totam. Quos provident saepe facilis mollitia sed earum, similique! Veritatis ut eveniet laboriosam odio quibusdam.&lt;/p&gt;
+
+&lt;p&gt;Sit voluptatibus magnam assumenda debitis rerum mollitia minus doloremque sequi perferendis! Minus tenetur sed facilis accusamus perspiciatis praesentium! Quis reprehenderit quia placeat quo quos obcaecati corporis et? Sint itaque laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>React.js Internals with Nick Niemeir</title>
+      <link>http://readthesource.github.io/hangouts/react-internals/</link>
+      <pubDate>Thu, 04 Sep 2014 16:00:00 UTC</pubDate>
+      
+      <guid>http://readthesource.github.io/hangouts/react-internals/</guid>
+      <description>&lt;p&gt;React: a robust functional view layer.&lt;/p&gt;
+
+&lt;p&gt;View code and templating are combined as JavaScript.&lt;/p&gt;
+
+&lt;p&gt;In JavaScript you create a virtual DOM, react diffs
+changes between the last virtual DOM and the next,
+mutating the real DOM only as necessary to reflect
+the changes. This has huge implications for cognitive
+overhead as well as performance.&lt;/p&gt;
+
+&lt;p&gt;We are going to enter the source where that virtual
+DOM gets created using calls to
+&lt;code&gt;React.DOM[element](attributes, contents)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Example usage&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;
+var React = require(&#39;react&#39;)
+  , d = React.DOM // Alias React.DOM for easier typing
+
+var vDom =
+  d.div({className: &#39;conainer&#39;}
+    , d.div({className: &#39;contents&#39;},
+      { start: d.p({}, &#39;Foo, bar, baz&#39;)
+      , middle: d.a({href: &#39;http://github.com&#39;}, &#39;github&#39;)
+      , end: d.p({}, [&#39;Weee&#39;, &#39;eeeeeee&#39;, &#39;eeee&#39;])
+      }
+    )
+  )
+
+console.log(JSON.stringify(vDom, null, 2))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Creating the template interface-
+&lt;a href=&#34;https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js#L45&#34;&gt;https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js#L45&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The actual function called for a tag (eg. React.DOM.div)-
+&lt;a href=&#34;https://github.com/facebook/react/blob/master/src/core/ReactDescriptor.js#L136-188&#34;&gt;https://github.com/facebook/react/blob/master/src/core/ReactDescriptor.js#L136-188&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mixed in component pieces-
+&lt;a href=&#34;https://github.com/facebook/react/blob/master/src/core/ReactComponent.js#L217&#34;&gt;https://github.com/facebook/react/blob/master/src/core/ReactComponent.js#L217&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/facebook/react/blob/master/src/core/ReactMultiChild.js#L178&#34;&gt;https://github.com/facebook/react/blob/master/src/core/ReactMultiChild.js#L178&lt;/a&gt;
+  Util to traverse all children-
+  &lt;a href=&#34;https://github.com/facebook/react/blob/master/src/utils/traverseAllChildren.js#L185&#34;&gt;https://github.com/facebook/react/blob/master/src/utils/traverseAllChildren.js#L185&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js&#34;&gt;https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Polymer Application Data Binding &amp; Communication</title>
+      <link>http://readthesource.github.io/hangouts/polymer-data-binding-and-communication/</link>
+      <pubDate>Thu, 05 Jun 2014 16:30:35 PDT</pubDate>
+      
+      <guid>http://readthesource.github.io/hangouts/polymer-data-binding-and-communication/</guid>
+      <description>&lt;p&gt;Building a Polymer Web Component application I encountered a few challenges with passing data between various levels of nested components. In this ReadTheSource session we will look at some of the solutions I implemented and the code behind them. Some worked well and some just didn&amp;rsquo;t work.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

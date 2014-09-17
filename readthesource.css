@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo);
+
+body {
+  font-family: "Open Sans"
+}
+
+h1, h2, h3 {
+  font-family: "Swanky and Moo Moo"
+}
+
+h1 a, h2 a, h3 a {
+  color: #333;
+}
+
+.navbar {
+  background: #EEE;
+  margin-bottom: 0px;
+}
+
+.navbar a {
+  color: #333;
+}
+
+.navbar i {
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 100px;
+  margin-top: -17px;
+}
+
+.jumbotron {
+  color: #EEE;
+  background: #444;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 0px;
+}
+
+.jumbotron h3 {
+  margin-top: 0px;
+}
+
+.hangouts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*.hangouts .row {*/
+/*  padding-bottom: 40px;*/
+/*}*/
+
+.hangouts .heading-row {
+  /*padding-top: 30px;*/
+  padding-bottom: 10px;
+
+}
+
+/* This is the hangout viewer w/youtube vid */
+.hangout {
+  color: #EEE;
+  background: #444;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+.hangout-info {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background: #EEE;
+  border-top: 2px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+.participants {
+  margin-top: -30px;
+  padding: 0
+}
+
+.notes {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+
+.buzz {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: #EEE;
+  border-top: 2px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+
+.buzz blockquote {
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 0px;
+}
+.buzz p {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.sponsors {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: #EEE;
+  border-top: 2px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  color: #CCC;
+}
+
+.about .row {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.subscribe {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-top: 2px solid #555;
+  border-bottom: 1px solid #555;
+  background: #666;
+  color: #CCC;
+}
+
+.subscribe input {
+  width: 60% !important;
+}
+
+.subscribe .help-block {
+  color: #AAA;
+  font-family: "Swanky and Moo Moo";
+  font-size: 1.25em;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: #333;
+  text-align: center;
+  color: #AAA
+}
+
+.footer a {
+  color: #DDD;
+}
+
+.footer i {
+  font-size: 72px;
+}
+
+/*.twitter {*/
+/*  color: blue !important;*/
+/*}*/
+
+/*.google-plus {*/
+/*  color: white !important;*/
+/*}*/
+
+.hangout-links {
+  margin-top: 10px;
+}
+
+.youtube-play {
+  color: darkred !important;
+}
+
+.repository {
+  color: #666 !important;
+}
+
+.hackernews {
+  color: orange !important;
+}
+
+/*.github {*/
+/*  color: grey !important;*/
+/*}*/
+/*.rss {*/
+/*  color: orange !important;*/
+/*}*/

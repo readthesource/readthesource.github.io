@@ -1,0 +1,323 @@
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="hangouts">
+  <meta name="author" content="readthesource">
+  <link rel="icon" href="">
+  <title>React.js Internals with Nick Niemeir</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/readthesource.css">
+  
+</head>
+
+  <body>
+    <div class="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="/rts-logo.png" alt=""></a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+      
+      <ul class="nav navbar-nav">
+        <li><a href="/#schedule">Schedule</a></li>
+        <li><a href="/#buzz">Buzz</a></li>
+        <li><a href="/#videos">Videos</a></li>
+        <li><a href="/#sponsors">Sponsors</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://twitter.com/readthesource">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://plus.google.com/b/105627089988168968277/105627089988168968277/posts">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCVqD-Rd1nMmvbvf-AvQvgZw">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/readthesource">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li><a href=""><i class="fa fa-rss"></i></a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+    <div class="hangout">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <iframe width="853"
+                height="480"
+                src="//www.youtube.com/embed/FAgSdSikSCc"
+                frameborder="0"
+                allowfullscreen>
+        </iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="hangout-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+
+
+        <ul class="list-inline pull-right hangout-links">
+          
+            <li>
+              <a href="http://youtu.be/FAgSdSikSCc">
+                <i class="fa fa-youtube-play"></i>
+              </a>
+            </li>
+          
+
+          
+            <li>
+              <a href="https://github.com/facebook/react">
+                <i class="fa fa-code"></i>
+              </a>
+            </li>
+          
+
+          
+            <li>
+              <a href="https://news.ycombinator.com/item?id=8274133">
+                <i class="fa fa-hacker-news"></i>
+              </a>
+            </li>
+          
+        </ul>
+
+
+
+        <h2><a href="http://readthesource.github.io/hangouts/react-internals/">React.js Internals with Nick Niemeir</a></h2>
+        <p class="small">
+          <strong>Thu, Sep 4, 2014</strong>
+          – In JavaScript you create a virtual DOM, react diffs changes between the last virtual DOM and the next, mutating the real DOM only as necessary to reflect the changes. This has huge implications for cognitive overhead as well as performance. We are going to enter the source where that virtual DOM gets created using calls to `React.DOM[element](attributes, contents)`
+        </p>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="participants">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <ul class="list-inline text-center">
+          
+          <li>
+            <a href="">
+              <img class="img-circle img-thumbnail"
+                   src="https://pbs.twimg.com/profile_images/496528143008542720/ayPM6CHw.jpeg"
+                   width="60"
+                   height="60"
+                   alt="Nick Niemeir">
+            </a>
+          </li>
+          
+          <li>
+            <a href="">
+              <img class="img-circle img-thumbnail"
+                   src="https://pbs.twimg.com/profile_images/2824302893/c2711652fb0e430b86c801d46f739638.png"
+                   width="60"
+                   height="60"
+                   alt="Christian Smith">
+            </a>
+          </li>
+          
+          <li>
+            <a href="">
+              <img class="img-circle img-thumbnail"
+                   src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
+                   width="60"
+                   height="60"
+                   alt="Erik Isaksen">
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="notes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>Hangout Notes</h2>
+        <p>React: a robust functional view layer.</p>
+
+<p>View code and templating are combined as JavaScript.</p>
+
+<p>In JavaScript you create a virtual DOM, react diffs
+changes between the last virtual DOM and the next,
+mutating the real DOM only as necessary to reflect
+the changes. This has huge implications for cognitive
+overhead as well as performance.</p>
+
+<p>We are going to enter the source where that virtual
+DOM gets created using calls to
+<code>React.DOM[element](attributes, contents)</code></p>
+
+<p>Example usage</p>
+
+<pre><code class="language-JavaScript">
+var React = require('react')
+  , d = React.DOM // Alias React.DOM for easier typing
+
+var vDom =
+  d.div({className: 'conainer'}
+    , d.div({className: 'contents'},
+      { start: d.p({}, 'Foo, bar, baz')
+      , middle: d.a({href: 'http://github.com'}, 'github')
+      , end: d.p({}, ['Weee', 'eeeeeee', 'eeee'])
+      }
+    )
+  )
+
+console.log(JSON.stringify(vDom, null, 2))
+
+</code></pre>
+
+<p>Creating the template interface-
+<a href="https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js#L45">https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js#L45</a></p>
+
+<p>The actual function called for a tag (eg. React.DOM.div)-
+<a href="https://github.com/facebook/react/blob/master/src/core/ReactDescriptor.js#L136-188">https://github.com/facebook/react/blob/master/src/core/ReactDescriptor.js#L136-188</a></p>
+
+<p>Mixed in component pieces-
+<a href="https://github.com/facebook/react/blob/master/src/core/ReactComponent.js#L217">https://github.com/facebook/react/blob/master/src/core/ReactComponent.js#L217</a></p>
+
+<p><a href="https://github.com/facebook/react/blob/master/src/core/ReactMultiChild.js#L178">https://github.com/facebook/react/blob/master/src/core/ReactMultiChild.js#L178</a>
+  Util to traverse all children-
+  <a href="https://github.com/facebook/react/blob/master/src/utils/traverseAllChildren.js#L185">https://github.com/facebook/react/blob/master/src/utils/traverseAllChildren.js#L185</a></p>
+
+<p><a href="https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js">https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <a name="sponsors"></a>
+<div class="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="list-inline">
+          <li><a href="#"><img src="http://placehold.it/150x50" alt=""></a></li>
+          <li><a href="#"><img src="http://placehold.it/150x50" alt=""></a></li>
+          <li><a href="#"><img src="http://placehold.it/150x50" alt=""></a></li>
+          <li><a href="#"><img src="http://placehold.it/150x50" alt=""></a></li>
+          <li><a href="#"><img src="http://placehold.it/150x50" alt=""></a></li>
+        </ul>
+        <p class="small muted">If you were here, they'd be clicking and tapping. Contact us to find out about being a sponsor.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <a name="about"></a>
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>About the Hangouts</h1>
+            <p class="small">
+
+            We're not here so much to learn how to use the code we read as we are to see how it works on the inside and hopefully derive some kind of nerd enlightenment from the experience. That said, it's sometimes easier to understand how to use a package effectively by looking at its implementation, rather than just reading the docs or playing with toy examples. Documentation can mislead and even lie, but code always tells the truth.
+            </p>
+
+            <p class="small">
+            When we're starting out on a project, we can afford to treat external dependencies as black box abstractions. But once we start hitting those tricky edge cases, we're just begging for trouble if we treat our foundational components as being completely opaque.
+            </p>
+
+            <p class="small">
+            Reading the source can be intimidating at first, but it's really an important skill for an advancing developer to acquire. That skill can open the doors to writing better code and even becoming an open source contributor. So aside from learning the internals of any given tool, if we have a big picture goal for these hangouts it should probably be to lower the psychological barriers to this kind of exploration. That's where we're coming from, and we hope everyone walks away with something valuable. Thanks for joining in ;-)
+            </p>
+
+            <h3 class="text-right"><em>Hosted with <i class="fa fa-heart"></i> by <a href="https://twitter.com/anvilhacks">@anvilhacks</a> &amp; <a href="https://twitter.com/eisaksen">@eisaksen</a>.</em></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+        <form class="form-inline text-center" action="">
+          <div class="control-group">
+            <input type="email" placeholder="Enter your email to be notified of upcoming hangouts" class="form-control">&nbsp;
+            <button class="btn btn-warning">Subscribe</button>
+          </div>
+          <span class="help-block">Just updates on hangouts. No spam. No one else gets your email.</span>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer">
+  <div class="container">
+    <ul class="list-inline">
+
+      <li>
+        <a class="twitter" href="https://twitter.com/readthesource">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google-plus" href="https://plus.google.com/b/105627089988168968277/105627089988168968277/posts">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a class="youtube" href="https://www.youtube.com/channel/UCVqD-Rd1nMmvbvf-AvQvgZw">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </li>
+      <li><a class="github" href="https://github.com/readthesource"><i class="fa fa-github"></i></a></li>
+      <li><a class="rss" href=""><i class="fa fa-rss"></i></a></li>
+    </ul>
+    <p class="small">&copy; 2014 readthesource.io</p>
+  </div>
+</div>
+
+  </body>
+</html>
