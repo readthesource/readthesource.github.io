@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://readthesource.github.io/</loc>
+    <loc>http://hangouts.readthesource.github.io/</loc>
     <lastmod>2014-10-02T16:08:41-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://readthesource.github.io/hangouts/whizbang-framework/</loc>
+    <loc>http://hangouts.readthesource.github.io/hangouts/whizbang-framework/</loc>
     <lastmod>2014-10-02T16:08:41-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://readthesource.github.io/hangouts/react-internals/</loc>
+    <loc>http://hangouts.readthesource.github.io/hangouts/react-internals/</loc>
     <lastmod>2014-09-04T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://readthesource.github.io/hangouts/polymer-data-binding-and-communication/</loc>
+    <loc>http://hangouts.readthesource.github.io/hangouts/polymer-data-binding-and-communication/</loc>
     <lastmod>2014-06-05T16:30:35-07:00</lastmod>
   </url>
   

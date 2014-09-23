@@ -48,6 +48,12 @@ h1 a, h2 a, h3 a {
   margin-top: 0px;
 }
 
+
+.jumbotron img {
+  width: 100px;
+  height: 100px;
+}
+
 .hangouts {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -117,6 +123,10 @@ h1 a, h2 a, h3 a {
   border-top: 2px solid #DDD;
   border-bottom: 1px solid #DDD;
   color: #CCC;
+}
+
+.sponsors img {
+  margin-bottom: 20px;
 }
 
 .about .row {
