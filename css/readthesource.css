@@ -143,6 +143,10 @@ h1 a, h2 a, h3 a {
   color: #CCC;
 }
 
+.subscribe input {
+  display: inline;
+}
+
 .subscribe #mce-EMAIL {
   width: 63% !important;
 }
