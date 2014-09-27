@@ -101,7 +101,7 @@
 
 
 
-        <h2><a href="http://hangouts.readthesource.io/hangouts/whizbang-framework/">Whizbang Framework Overview</a></h2>
+        <h2><a href="http://localhost:1313/hangouts/whizbang-framework/">Whizbang Framework Overview</a></h2>
         <p class="small">
           <strong>Thu, Oct 2, 2014</strong>
           – Amet <a href="#">eius</a> quidem nobis porro incidunt. Inventore minus recusandae molestias facilis placeat dolore neque. Odio asperiores rerum veritatis iste odit, odio? Consequatur mollitia repudiandae enim architecto ad minus illo. Necessitatibus.
@@ -128,16 +128,6 @@
           <li>
             <a href="">
               <img class="img-circle img-thumbnail"
-                   src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
-                   width="60"
-                   height="60"
-                   alt="Erik Isaksen">
-            </a>
-          </li>
-          
-          <li>
-            <a href="">
-              <img class="img-circle img-thumbnail"
                    src="http://placehold.it/100x100"
                    width="60"
                    height="60"
@@ -152,6 +142,16 @@
                    width="60"
                    height="60"
                    alt="Christian Smith">
+            </a>
+          </li>
+          
+          <li>
+            <a href="">
+              <img class="img-circle img-thumbnail"
+                   src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
+                   width="60"
+                   height="60"
+                   alt="Erik Isaksen">
             </a>
           </li>
           
@@ -313,5 +313,8 @@
   ga('send', 'pageview');
 </script>
 
-  </body>
+  <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
