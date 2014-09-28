@@ -17,7 +17,7 @@ h1 a, h2 a, h3 a {
 
 pre {
   padding: 0px;
-  background: #000;
+  background: #272822;
 }
 
 pre code {
@@ -46,7 +46,8 @@ pre code {
 
 .jumbotron {
   color: #EEE;
-  background: #444;
+  background: #272822;
+  /*background: #444;*/
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   padding-top: 60px;
@@ -82,7 +83,8 @@ pre code {
 /* This is the hangout viewer w/youtube vid */
 .hangout {
   color: #EEE;
-  background: #444;
+  background: #272822;
+  /*background: #444;*/
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   padding-top: 20px;
