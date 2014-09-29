@@ -40,7 +40,7 @@
           </a>
         </li>
         <li>
-          <a href="https://plus.google.com/b/105627089988168968277/105627089988168968277/posts">
+          <a href="https://plus.google.com/105627089988168968277" rel="publisher">
             <i class="fa fa-google-plus"></i>
           </a>
         </li>
@@ -101,7 +101,7 @@
                       </li>
                     
                   </ul>
-                  <a class="btn btn-warning" href="http://hangouts.readthesource.io/hangouts/divshot-superstatic/">Watch it now!</a>
+                  <a class="btn btn-warning" href="http://localhost:1313/hangouts/divshot-superstatic/">Watch it now!</a>
 
                 
               
@@ -169,7 +169,7 @@
 
 
     
-    <h4><a href="http://hangouts.readthesource.io/hangouts/divshot-superstatic/">Divshot&#39;s Superstatic with Scott Corgan</a></h4>
+    <h4><a href="http://localhost:1313/hangouts/divshot-superstatic/">Divshot&#39;s Superstatic with Scott Corgan</a></h4>
     <p class="small">
       <strong>Thu, Oct 2, 2014</strong>
       – <a href="https://github.com/divshot/superstatic" target="_blank">Superstatic</a> is an enhanced static web server that was built to power <a href="https://divshot.com/" target="_blank">Divshot</a>. It has fantastic support for HTML5 pushState applications, clean URLs, caching, and MANY other goodies. <a href="https://github.com/scottcorgan" target="_blank">Scott Corgan</a> has been doing JavaScript for about 10 years. He's Divshot’s first employee and sole, full-time Node developer. Follow along or join in as Scott walks us through Superstatic's source code.
@@ -341,7 +341,7 @@
 
 
     
-    <h4><a href="http://hangouts.readthesource.io/hangouts/react-internals/">React.js Internals with Nick Niemeir</a></h4>
+    <h4><a href="http://localhost:1313/hangouts/react-internals/">React.js Internals with Nick Niemeir</a></h4>
     <p class="small">
       <strong>Thu, Sep 4, 2014</strong>
       – In JavaScript you create a virtual DOM, react diffs changes between the last virtual DOM and the next, mutating the real DOM only as necessary to reflect the changes. This has huge implications for cognitive overhead as well as performance. We are going to enter the source where that virtual DOM gets created using calls to `React.DOM[element](attributes, contents)`
@@ -351,6 +351,16 @@
 
     
     <ul class="list-inline">
+      
+      <li>
+        <a href="">
+          <img class="img-circle"
+               src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
+               width="30"
+               height="30"
+               alt="Erik Isaksen">
+        </a>
+      </li>
       
       <li>
         <a href="">
@@ -369,16 +379,6 @@
                width="30"
                height="30"
                alt="Christian Smith">
-        </a>
-      </li>
-      
-      <li>
-        <a href="">
-          <img class="img-circle"
-               src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
-               width="30"
-               height="30"
-               alt="Erik Isaksen">
         </a>
       </li>
       
@@ -415,7 +415,7 @@
 
 
     
-    <h4><a href="http://hangouts.readthesource.io/hangouts/polymer-data-binding-and-communication/">Polymer Application Data Binding &amp; Communication</a></h4>
+    <h4><a href="http://localhost:1313/hangouts/polymer-data-binding-and-communication/">Polymer Application Data Binding &amp; Communication</a></h4>
     <p class="small">
       <strong>Thu, Jun 5, 2014</strong>
       – Building a Polymer Web Component application I encountered a few challenges with passing data between various levels of nested components. In this ReadTheSource session we will look at some of the solutions I implemented and the code behind them. Some worked well and some just didn't work.
@@ -425,16 +425,6 @@
 
     
     <ul class="list-inline">
-      
-      <li>
-        <a href="">
-          <img class="img-circle"
-               src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
-               width="30"
-               height="30"
-               alt="Erik Isaksen">
-        </a>
-      </li>
       
       <li>
         <a href="">
@@ -473,6 +463,16 @@
                width="30"
                height="30"
                alt="Rob Dodson">
+        </a>
+      </li>
+      
+      <li>
+        <a href="">
+          <img class="img-circle"
+               src="https://pbs.twimg.com/profile_images/477429289151787009/iGNukk9x.jpeg"
+               width="30"
+               height="30"
+               alt="Erik Isaksen">
         </a>
       </li>
       
@@ -607,7 +607,7 @@
         </a>
       </li>
       <li>
-        <a class="google-plus" href="https://plus.google.com/b/105627089988168968277/105627089988168968277/posts">
+        <a class="google-plus" href="https://plus.google.com/105627089988168968277" rel="publisher">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
@@ -632,5 +632,8 @@
   ga('send', 'pageview');
 </script>
 
-  </body>
+  <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on readthesource </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://hangouts.readthesource.io/index.xml/</link>
+    <link>http://localhost:1313/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,19 +11,19 @@
     
     <item>
       <title>Divshot&#39;s Superstatic with Scott Corgan</title>
-      <link>http://hangouts.readthesource.io/hangouts/divshot-superstatic/</link>
+      <link>http://localhost:1313/hangouts/divshot-superstatic/</link>
       <pubDate>Thu, 02 Oct 2014 16:00:00 PDT</pubDate>
       
-      <guid>http://hangouts.readthesource.io/hangouts/divshot-superstatic/</guid>
+      <guid>http://localhost:1313/hangouts/divshot-superstatic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React.js Internals with Nick Niemeir</title>
-      <link>http://hangouts.readthesource.io/hangouts/react-internals/</link>
+      <link>http://localhost:1313/hangouts/react-internals/</link>
       <pubDate>Thu, 04 Sep 2014 16:00:00 UTC</pubDate>
       
-      <guid>http://hangouts.readthesource.io/hangouts/react-internals/</guid>
+      <guid>http://localhost:1313/hangouts/react-internals/</guid>
       <description>&lt;p&gt;React: a robust functional view layer.&lt;/p&gt;
 
 &lt;p&gt;View code and templating are combined as JavaScript.&lt;/p&gt;
@@ -77,10 +77,10 @@ console.log(JSON.stringify(vDom, null, 2))
     
     <item>
       <title>Polymer Application Data Binding &amp; Communication</title>
-      <link>http://hangouts.readthesource.io/hangouts/polymer-data-binding-and-communication/</link>
+      <link>http://localhost:1313/hangouts/polymer-data-binding-and-communication/</link>
       <pubDate>Thu, 05 Jun 2014 16:30:35 PDT</pubDate>
       
-      <guid>http://hangouts.readthesource.io/hangouts/polymer-data-binding-and-communication/</guid>
+      <guid>http://localhost:1313/hangouts/polymer-data-binding-and-communication/</guid>
       <description>&lt;p&gt;Building a Polymer Web Component application I encountered a few challenges with passing data between various levels of nested components. In this ReadTheSource session we will look at some of the solutions I implemented and the code behind them. Some worked well and some just didn&amp;rsquo;t work.&lt;/p&gt;
 </description>
     </item>
