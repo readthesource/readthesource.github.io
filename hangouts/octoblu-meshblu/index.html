@@ -6,7 +6,7 @@
   <meta name="description" content="hangouts">
   <meta name="author" content="readthesource">
   <link rel="icon" href="">
-  <title>React.js Internals with Nick Niemeir</title>
+  <title>Octoblu&#39;s Meshblu with Chris Matthieu</title>
   <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/monokai.min.css">
   <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
@@ -67,7 +67,7 @@
       <div class="col-md-10 col-md-offset-1 text-center">
 
         <div class="flex-video widescreen">
-          <iframe src="//www.youtube.com/embed/FAgSdSikSCc"
+          <iframe src="//www.youtube.com/embed/v8OX8z1vvpc"
                   frameborder="0"
                   allowfullscreen>
           </iframe>
@@ -88,7 +88,7 @@
   
     <li>
       <a class="repository"
-         href="https://github.com/facebook/react"
+         href="https://github.com/octoblu/meshblu"
          target="_blank">
             <i class="fa fa-code"></i>
       </a>
@@ -98,7 +98,7 @@
   
     <li>
       <a class="googleplus"
-         href="https://plus.google.com/b/105627089988168968277/events/cpuemsgmdltri201f25ud3fsnn8"
+         href="https://plus.google.com/events/c9m5r35k4rgrli515gcd854es6g"
          target="_blank">
             <i class="fa fa-google-plus"></i>
       </a>
@@ -108,7 +108,7 @@
   
     <li>
       <a class="youtube-play"
-         href="http://youtu.be/FAgSdSikSCc"
+         href="http://youtu.be/v8OX8z1vvpc"
          target="_blank">
             <i class="fa fa-youtube-play"></i>
       </a>
@@ -116,22 +116,14 @@
   
 
   
-    <li>
-      <a class="hackernews"
-         href="https://news.ycombinator.com/item?id=8274133"
-         target="_blank">
-            <i class="fa fa-hacker-news"></i>
-      </a>
-    </li>
-  
 </ul>
 
 
         
-        <h2><a href="http://hangouts.readthesource.io/hangouts/react-internals/">React.js Internals with Nick Niemeir</a></h2>
+        <h2><a href="http://hangouts.readthesource.io/hangouts/octoblu-meshblu/">Octoblu&#39;s Meshblu with Chris Matthieu</a></h2>
         <p class="small">
-          <strong>Thu, Sep 4, 2014</strong>
-          – In JavaScript you create a virtual DOM, react diffs changes between the last virtual DOM and the next, mutating the real DOM only as necessary to reflect the changes. This has huge implications for cognitive overhead as well as performance. We are going to enter the source where that virtual DOM gets created using calls to `React.DOM[element](attributes, contents)`
+          <strong>Thu, Oct 16, 2014</strong>
+          – Meshblu, codenamed SkyNet.im, is an open source machine-to-machine instant messaging network and API that powers the Internet of Things. Join evil mastermind Chris Matthieu and the Octoblu team as we read the source!
         </p>
 
       </div>
@@ -149,10 +141,10 @@
           <li>
             <a href="">
               <img class="img-circle img-thumbnail"
-                   src="https://pbs.twimg.com/profile_images/496528143008542720/ayPM6CHw.jpeg"
+                   src="https://pbs.twimg.com/profile_images/918916153/SuperChrisSmall.jpg"
                    width="60"
                    height="60"
-                   alt="Nick Niemeir">
+                   alt="Chris Matthieu">
             </a>
           </li>
           
@@ -188,55 +180,7 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <h2>Hangout Notes</h2>
-        <p>React: a robust functional view layer.</p>
-
-<p>View code and templating are combined as JavaScript.</p>
-
-<p>In JavaScript you create a virtual DOM, react diffs
-changes between the last virtual DOM and the next,
-mutating the real DOM only as necessary to reflect
-the changes. This has huge implications for cognitive
-overhead as well as performance.</p>
-
-<p>We are going to enter the source where that virtual
-DOM gets created using calls to
-<code>React.DOM[element](attributes, contents)</code></p>
-
-<p>Example usage</p>
-
-<pre><code class="language-JavaScript">
-var React = require('react')
-  , d = React.DOM // Alias React.DOM for easier typing
-
-var vDom =
-  d.div({className: 'conainer'}
-    , d.div({className: 'contents'},
-      { start: d.p({}, 'Foo, bar, baz')
-      , middle: d.a({href: 'http://github.com'}, 'github')
-      , end: d.p({}, ['Weee', 'eeeeeee', 'eeee'])
-      }
-    )
-  )
-
-console.log(JSON.stringify(vDom, null, 2))
-
-</code></pre>
-
-<p>Creating the template interface-
-<a href="https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js#L45">https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js#L45</a></p>
-
-<p>The actual function called for a tag (eg. React.DOM.div)-
-<a href="https://github.com/facebook/react/blob/master/src/core/ReactDescriptor.js#L136-188">https://github.com/facebook/react/blob/master/src/core/ReactDescriptor.js#L136-188</a></p>
-
-<p>Mixed in component pieces-
-<a href="https://github.com/facebook/react/blob/master/src/core/ReactComponent.js#L217">https://github.com/facebook/react/blob/master/src/core/ReactComponent.js#L217</a></p>
-
-<p><a href="https://github.com/facebook/react/blob/master/src/core/ReactMultiChild.js#L178">https://github.com/facebook/react/blob/master/src/core/ReactMultiChild.js#L178</a>
-  Util to traverse all children-
-  <a href="https://github.com/facebook/react/blob/master/src/utils/traverseAllChildren.js#L185">https://github.com/facebook/react/blob/master/src/utils/traverseAllChildren.js#L185</a></p>
-
-<p><a href="https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js">https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js</a></p>
-
+        
       </div>
     </div>
   </div>
