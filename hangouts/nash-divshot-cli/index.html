@@ -120,7 +120,7 @@
 
 
         
-        <h2><a href="http://hangouts.readthesource.io/hangouts/nash-divshot-cli/">Nash and Divshot&#39;s CLI with Scott Corgan</a></h2>
+        <h2><a href="http://localhost:1313/hangouts/nash-divshot-cli/">Nash and Divshot&#39;s CLI with Scott Corgan</a></h2>
         <p class="small">
           <strong>Thu, Mar 26, 2015</strong>
           – <a href="https://divshot.com/" target="_blank">Divshot</a> provides a <a href="https://github.com/divshot/divshot-cli" target="_blank">convenient CLI</a> for developers using their platform. Scott Corgan takes us on a tour of that code along with <a href="https://github.com/scottcorgan/nash" target="_blank">nash</a>, the library he wrote to craft this command line masterpiece.
@@ -301,5 +301,8 @@
         <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-  </body>
+  <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
