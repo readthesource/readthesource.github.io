@@ -6,9 +6,15 @@
     <description>Recent content on readthesource</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thurs, 22 Oct 2015 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thurs, 12 Nov 2015 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://hangouts.readthesource.io/index.xml" rel="self" type="application/rss+xml" />
-
+    <item>
+      <title>Netflix Falcor</title>
+      <link>http://hangouts.readthesource.io/hangouts/netflix-falcor</link>
+      <pubDate>Thurs, 12 Nov 2015 08:00:00 -0700</pubDate>
+      <guid>http://hangouts.readthesource.io/hangouts/clearwater</guid>
+      <description>Michael Paulson reveals the source code of Falcor</description>
+    </item>
     <item>
       <title>Clearwater</title>
       <link>http://hangouts.readthesource.io/hangouts/clearwater</link>
@@ -19,7 +25,7 @@
     </item>
     <item>
       <title>Node.js Core Streams</title>
-      <link>http://hangouts.readthesource.io/hangouts/nodejs-core-streams</link>
+      <link>http://hangouts.readthesource.io/hangouts/nodejs-streams</link>
       <pubDate>Thurs, 24 Sept 2015 09:22:00 -700</pubDate>
 
       <guid>http://hangouts.readthesource.io/hangouts/nodejs-core-streams</guid>
