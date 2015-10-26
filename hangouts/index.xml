@@ -8,66 +8,93 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 20 May 2015 11:00:00 -0700</lastBuildDate>
     <atom:link href="http://hangouts.readthesource.io/hangouts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Angular 2</title>
+      <link>http://hangouts.readthesource.io/hangouts/angular-2/</link>
+      <pubDate>Wed, 26 Oct 2015 11:00:00 -0700</pubDate>
+      <guid>http://hangouts.readthesource.io/hangouts/angular-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Netflix Falcor</title>
+      <link>http://hangouts.readthesource.io/hangouts/netflix-falcor/</link>
+      <pubDate>Wed, 26 Oct 2015 11:00:00 -0700</pubDate>
+      <guid>http://hangouts.readthesource.io/hangouts/netflix-falcor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clearwater</title>
+      <link>http://hangouts.readthesource.io/hangouts/clearwater/</link>
+      <pubDate>Wed, 26 Oct 2015 11:00:00 -0700</pubDate>
+      <guid>http://hangouts.readthesource.io/hangouts/clearwater/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js Core Streams</title>
+      <link>http://hangouts.readthesource.io/hangouts/nodejs-streams/</link>
+      <pubDate>Wed, 26 Oct 2015 11:00:00 -0700</pubDate>
+      <guid>http://hangouts.readthesource.io/hangouts/nodejs-streams/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Famo.us Front End Containers</title>
       <link>http://hangouts.readthesource.io/hangouts/famo.us-front-end-containers/</link>
       <pubDate>Wed, 20 May 2015 11:00:00 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/famo.us-front-end-containers/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>NG-Aria &amp; Angular Accessibility with Marcy Sutton</title>
       <link>http://hangouts.readthesource.io/hangouts/ng-aria-angularjs-accessibility/</link>
       <pubDate>Thu, 09 Apr 2015 09:30:00 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/ng-aria-angularjs-accessibility/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Nash and Divshot&#39;s CLI with Scott Corgan</title>
       <link>http://hangouts.readthesource.io/hangouts/nash-divshot-cli/</link>
       <pubDate>Thu, 26 Mar 2015 09:30:00 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/nash-divshot-cli/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>ICE Code Editor with Chris Strom</title>
       <link>http://hangouts.readthesource.io/hangouts/ice-code-editor/</link>
       <pubDate>Wed, 29 Oct 2014 09:30:00 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/ice-code-editor/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Octoblu&#39;s Meshblu with Chris Matthieu</title>
       <link>http://hangouts.readthesource.io/hangouts/octoblu-meshblu/</link>
       <pubDate>Thu, 16 Oct 2014 12:30:00 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/octoblu-meshblu/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Divshot&#39;s Superstatic with Scott Corgan</title>
       <link>http://hangouts.readthesource.io/hangouts/divshot-superstatic/</link>
       <pubDate>Thu, 02 Oct 2014 16:00:00 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/divshot-superstatic/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>React.js Internals with Nick Niemeir</title>
       <link>http://hangouts.readthesource.io/hangouts/react-internals/</link>
       <pubDate>Thu, 04 Sep 2014 16:00:00 +0000</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/react-internals/</guid>
       <description>&lt;p&gt;React: a robust functional view layer.&lt;/p&gt;
 
@@ -119,16 +146,16 @@ console.log(JSON.stringify(vDom, null, 2))
 &lt;p&gt;&lt;a href=&#34;https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js&#34;&gt;https://github.com/facebook/react/blob/master/src/browser/ui/ReactBrowserComponentMixin.js&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Polymer Application Data Binding &amp; Communication</title>
       <link>http://hangouts.readthesource.io/hangouts/polymer-data-binding-and-communication/</link>
       <pubDate>Thu, 05 Jun 2014 16:30:35 -0700</pubDate>
-      
+
       <guid>http://hangouts.readthesource.io/hangouts/polymer-data-binding-and-communication/</guid>
       <description>&lt;p&gt;Building a Polymer Web Component application I encountered a few challenges with passing data between various levels of nested components. In this ReadTheSource session we will look at some of the solutions I implemented and the code behind them. Some worked well and some just didn&amp;rsquo;t work.&lt;/p&gt;
 </description>
     </item>
-    
+
   </channel>
 </rss>
