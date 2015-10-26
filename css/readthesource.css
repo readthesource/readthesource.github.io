@@ -221,7 +221,9 @@ pre code {
 /*}*/
 
 
-
+.img-responsive {
+  display: inline-block;
+}
 /**
  * RESPONSIVE EMBEDDED YOUTUBE VIDEO
  */
