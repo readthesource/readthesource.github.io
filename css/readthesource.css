@@ -252,3 +252,29 @@ pre code {
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
   .flex-video { padding-top: 0; }
 }
+
+.hero-header {
+  margin: 3em .5em;
+}
+
+ @media (min-width: 992px) {
+   .jumbotron .col-md-offset-2 {
+     margin-left: 12%;
+   }
+   .jumbotron .col-md-8 {
+     width: 76%;
+   }
+ }
+
+@media (min-width: 400px){
+
+}
+
+.jumbotron-list {
+  display:table;
+}
+.jumbotron-image {
+  display:table-cell;
+  width: 150px;
+  padding: .5em;
+}
